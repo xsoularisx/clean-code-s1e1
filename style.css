@@ -5,40 +5,40 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
+  font-family: 'fantasy', cursive;
 }
 
-.aaa img {
+.header__img {
   width: 100%;
 }
 
-.aaa .more_inf {
-  font-family: fantasy, cursive;
-}
-
 @media (max-width:768px) {
-  .aaa {
+  .header {
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
 .task {
-  width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 100%;
 }
 
-.task-row-wrapper {
+.add__tasks {
   display: flex;
 }
 
@@ -161,11 +161,11 @@ ul li input[type=text] {
   display: none
 }
 
-ul li.editMode input[type=text] {
+ul li.edit__tasks input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+ul li.edit__tasks label {
   display: none;
 }
